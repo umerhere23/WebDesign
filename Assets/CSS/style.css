@@ -69,7 +69,7 @@ nav {
     font-size: small;
 }
 
-.dropdown-content {
+.dropdown-contents {
     margin-top: 15%;
     margin-left: -7%;
     display: none;
@@ -82,25 +82,23 @@ nav {
 
 }
 
-.dropdown-content table {
+.dropdown-contents table {
     width: 100%;
     border-collapse: collapse;
 }
 
  
-.dropdown-content table  th  {
+.dropdown-contents table  th  {
 text-align: left;
 padding-bottom: 2%; }
 
- .dropdown-content table  td  {
+ .dropdown-contents table  td  {
     text-align: left;
  font-size: 0.9rem;
      }
 
-     /* .dropdown-content{
-        position: ;
-     } */
-     .dropdown-content::after{
+  
+     .dropdown-contents::after{
         content: "";
         position: absolute;
         top: -10px;  
@@ -113,8 +111,105 @@ padding-bottom: 2%; }
         border-bottom: 10px solid     rgb(119, 119, 119);  
        
      }
-     .menu li.modal:hover .dropdown-content {
+     .menu li.modal:hover .dropdown-contents {
     display: block;
+}
+a{
+    text-decoration: none;
+    
+}
+a::before{
+    text-decoration: none;
+}
+.fa-times-circle{
+    color: #000;
+    font-size: x-large;
+    
+}
+
+
+.searchbar{
+    width: 60%;
+    margin-left: 18%;
+    /* border: 2px solid #9623d8; */
+border-radius: 10px ;
+height: 50px;}
+.btn.btnss {
+    background-color: #7b10b9;  
+    border: none;
+    padding: 16px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+    height: 60px;
+    width: 65px;
+    text-align: center;
+  
+}
+#btt:active{
+    background-color: #7b10b9;  
+    color: aliceblue;
+ }
+
+.fa-search{
+   margin-left: 20%;
+   font-size: x-large;
+
+}
+#form1{
+    width: 81%;
+     margin-left: 20%;
+    border: 2px solid #9623d8;
+border-radius: 10px ;
+height: 60px;  
+}
+.btn.btnss:hover {
+    background-color: #940ae4;
+color: #000;
+ }
+
+ .searchscreen{
+    max-width: 2000px;
+    margin-inline: auto;
+ }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+}
+
+.flex-container > div {
+    flex: 1 1 30%;  
+    min-width: 200px; 
+
+    padding: 20px;  
+ }
+ .container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px;  
+}
+.text-left{
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.text-right{
+    color: #7b10b9;
+}
+.searchcat{
+    list-style: none;
+    color: #000;
+    padding: 10px;  
+}
+.bord{
+    border: none;  
+    border-top: 3px dotted #000;  
+    margin: 20px 0; 
 }
 @media (max-width: 768px) {
     .menu {
@@ -130,7 +225,11 @@ padding-bottom: 2%; }
         align-items: center;
         z-index: 1000;
     }
-
+    @media (max-width: 768px) {
+        .flex-container > div {
+            flex: 1 1 100%;  
+        }
+    }
     .menu ul {
         flex-direction: column;
         justify-content: center;
