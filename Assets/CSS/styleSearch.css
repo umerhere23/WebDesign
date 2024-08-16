@@ -1,0 +1,23 @@
+.close {
+    display: none;
+    list-style: none;
+ }
+ @media (max-width: 768px) {
+    .searchbar{
+        margin-top: 40px;
+        width: 100%;
+        margin-left: -8%;
+  
+    }
+    #form1{
+        border-radius: 10px 0px 0 10px  ;
+    }
+    .close {
+        display: block;
+        list-style: none;
+     }
+
+     .sicons{
+        font-size: x-large;
+        margin-left: 5px; }
+}
