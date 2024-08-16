@@ -4,101 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <style>
 
-    .menuss {
-        display: block;
-        flex-direction: column;
-        background-color: #fff;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        position: relative;
-        top: 220px;
-        right: 20px;
-        width: 98%;
-        z-index: 1000;
-        border-radius: 8px;
-        text-align: left;
-     }
-    .menuss ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .menuss li {
-        margin-bottom: 20px;
-        font-size: 18px;
-        font-weight: 500;
-        color: #4a235a;
-    }
-    .menuss li i {
-        margin-right: 10px;
-    }
-    .send-feedback {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #754290;
-        color: white;
-        padding: 10px;
-        border-radius:20px;
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-    }
-    .send-feedback i {
-        margin-right: 8px;
-    }
-    .featured-resources {
-        margin-top: 20px;
-        /* padding: 20px; */
-    }
-    .featured-resources h3 {
-        font-size: 22px;
-        color: #4a235a;
-        margin-bottom: 20px;
-    }
-    .featured-resources  {
-        font-size: 22px;
-        color: #4a235a;
-        margin-bottom: 20px;
-    }
-    .featured-resources li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        font-size: 18px;
-        color: #333;
-    }
-    .featured-resources li i {
-        margin-left: -10px;
-    }
-    .close-menu {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        font-size: 24px;
-        cursor: pointer;
-        color: #333;
-    }
-    .text-container {
-        margin-top: 70px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            
-            border-radius: 8px;
-            font-size: 18px;
-        }
+   
 </style>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="./Assets/Imgs/power-on 1.png" alt="Logo">
+                <img src="./assets/images/power-on 1.png" alt="Logo">
             </div>
             <div class="menu-icon" id="menu-icon">
                 <p class="current txtRes">Search <i class="fas fa-search"></i></p>
@@ -110,14 +27,14 @@
                     <div class="text-container">
                         <div class="left-text">
                             <div class="logo logos">
-                                <img src="./Assets/Imgs/power-on 1.png" alt="Logo">
+                              <img src="./assets/images/power-on 1.png" alt="Logo">
                             </div>                        </div>
                         <div class="right-text">
                             <i class="fa fa-times-circle close" aria-hidden="true"></i>                </div>
                     </div>
                     <h3 class="featured-resources">  Menu : <hr></h3>
                    
-                    <ol>
+                    <ol class="olmeu">
                         <li><i class="fas fa-pills"></i> All Peptides</li>
                         <li><i class="fas fa-clipboard"></i> Shop Reviews</li>
                         <li><i class="fas fa-sitemap"></i> Guides & Resources</li>
@@ -172,21 +89,4 @@
  
 </body>
 </html>
-<script>
-const menuIcon = document.getElementById('menu-icon');
-const mobileMenuContent = document.getElementById('mobile-menu-content');
-const closeIcon = document.querySelector('.fa-times-circle.close');
-
-menuIcon.addEventListener('click', () => {
-    if (mobileMenuContent.style.display === 'none') {
-        mobileMenuContent.style.display = 'block';
-    } else {
-        mobileMenuContent.style.display = 'none';
-    }
-});
-
-closeIcon.addEventListener('click', () => {
-    mobileMenuContent.style.display = 'none';
-});
-
-</script>
+<script src="./assets/js/script.js"></script>

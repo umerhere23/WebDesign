@@ -1,9 +1,17 @@
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    document.getElementById('mobile-menu').style.display = 'flex';
-    document.getElementById('menu-close').style.display = 'block';
+const menuIcon = document.getElementById('menu-icon');
+const mobileMenuContent = document.getElementById('mobile-menu-content');
+const closeIcon = document.querySelector('.fa-times-circle.close');
+
+menuIcon.addEventListener('click', () => {
+    if (mobileMenuContent.style.display === 'none') {
+        mobileMenuContent.style.display = 'block';
+    } else {
+        mobileMenuContent.style.display = 'none';
+    }
 });
 
-document.getElementById('menu-close').addEventListener('click', function() {
-    document.getElementById('mobile-menu').style.display = 'none';
-    document.getElementById('menu-close').style.display = 'none';
+closeIcon.addEventListener('click', () => {
+    mobileMenuContent.style.display = 'none';
 });
+
+ 
